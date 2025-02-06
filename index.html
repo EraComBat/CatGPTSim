@@ -49,9 +49,10 @@ var chatWindow = new Bubbles(document.getElementById("chat"), "chatWindow", {
     var miss = function() {
       chatWindow.talk(
         {
+          
           "i-dont-get-it": {
             says: [
-              "喵( •̀ ω •́ )y"
+              
             ],
             reply: o.convo[o.standingAnswer].reply
           }
@@ -81,10 +82,7 @@ var chatWindow = new Bubbles(document.getElementById("chat"), "chatWindow", {
     })
     found ? match(found) : miss()
   }
-}) // done setting up chat-bubble
-
-// conversation object defined separately, but just the same as in the
-// "Basic chat-bubble Example" (1-basics.html)
+}) 
 var convo = {
   ice: {
     says: ["喵?(｡•́︿•̀｡) "],

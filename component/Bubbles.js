@@ -47,12 +47,13 @@ function Bubbles(container, self, options) {
     // do not memorize buttons; only user input gets memorized:
     if (
       // `bubble-button` class name signals that it's a button
-      say.includes("bubble-button") &&
-      // if it is not of a type of textual reply
-      reply !== "reply reply-freeform" &&
-      // if it is not of a type of textual reply or memorized user choice
-      reply !== "reply reply-pick"
+      reply.includes("bubble-button")
     )
+
+    says: [
+      "喵"
+    ]
+    // reply o.convo[o.standingAnswer].reply
       // ...it shan't be memorized
       return
 
@@ -77,7 +78,7 @@ function Bubbles(container, self, options) {
     var inputWrap = document.createElement("div")
     inputWrap.className = "input-wrap"
     var inputText = document.createElement("textarea")
-    inputText.setAttribute("placeholder", "Ask me anything...")
+    inputText.setAttribute("placeholder", "请输入文本...")
     inputWrap.appendChild(inputText)
     inputText.addEventListener("keypress", function(e) {
       // register user input
@@ -90,11 +91,67 @@ function Bubbles(container, self, options) {
         !lastBubble.classList.contains("reply-freeform")
           ? lastBubble.classList.add("bubble-hidden")
           : false
+        
+
         addBubble(
           '<span class="bubble-button bubble-pick">' + this.value + "</span>",
           function() {},
           "reply reply-freeform"
         )
+        if (this.value.includes("同性恋") || this.value.includes("同性"))
+          addBubble(
+            'https://www.bilibili.com/video/BV1GJ411x7h7',
+            function() {},
+            
+          )
+        if (this.value.includes("蚊教") || this.value.includes("蚊子") || this.value.includes("蚊子教"))
+          addBubble(
+            '什么教喵?永远相信代数 物品至上神教(✿◡‿◡)',
+            function() {},
+            
+          )
+        if (this.value.includes("大澡堂") || this.value.includes("澡堂"))
+          addBubble(
+            '我就是澡堂新主喵( •̀ ω •́ )✧',
+            function() {},
+            
+          )
+        if (this.value.includes("嫌疑人") || this.value.includes("嫌疑"))
+            addBubble(
+              '嫌疑人疑似为了试出关键词不择手段(｡•́︿•̀｡)',
+              function() {},
+              
+            )
+        if (this.value.includes("草") || this.value.includes("草啊"))
+            addBubble(
+              '嫌疑人疑似??????????????????????(｡•́︿•̀｡)',
+              function() {},
+              
+            )
+        if (this.value.includes("物品") || this.value.includes("os") || this.value.includes("osc") || this.value.includes("bfdi") || this.value.includes("bfb") || this.value.includes("tpot") || this.value.includes("ii") || this.value.includes("iii") || this.value.includes("battle for dream island") || this.value.includes("inanimate insanity") || this.value.includes("osc"))
+            addBubble(
+              '你说得对,但是xxx前面忘了后面忘了喵',
+              function() {},
+              
+            )
+        if (this.value.includes("喵( •̀ ω •́ )y"))
+            addBubble(
+              '补药学我说话喵(｡•́︿•̀｡)',
+              function() {},
+              
+            )
+        if (this.value.includes("你好"))
+            addBubble(
+              '你好喵( •̀ ω •́ )y',
+              function() {},
+              
+            )
+        else
+            addBubble(
+              "听不懂喵(｡•́︿•̀｡)",
+              function() {},
+              
+            )
         // callback
         typeof callbackFn === "function"
           ? callbackFn({
