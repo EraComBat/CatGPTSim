@@ -98,12 +98,8 @@ function Bubbles(container, self, options) {
           function() {},
           "reply reply-freeform"
         )
-        if (this.value.includes("同性恋") || this.value.includes("同性"))
-          addBubble(
-            'https://www.bilibili.com/video/BV1GJ411x7h7',
-            function() {},
-            
-          )
+        if (this.value.includes("同性恋") || this.value.includes("同性"))  
+          window.location.href = "https://www.bilibili.com/video/BV1GJ411x7h7";
         if (this.value.includes("蚊教") || this.value.includes("蚊子") || this.value.includes("蚊子教"))
           addBubble(
             '永远相信蚊教(✿◡‿◡)',
