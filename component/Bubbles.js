@@ -2,8 +2,8 @@
 function Bubbles(container, self, options) {
   // options
   options = typeof options !== "undefined" ? options : {}
-  animationTime = options.animationTime || 200 // how long it takes to animate chat bubble, also set in CSS
-  typeSpeed = options.typeSpeed || 5 // delay per character, to simulate the machine "typing"
+  animationTime = options.animationTime || 250 // how long it takes to animate chat bubble, also set in CSS
+  typeSpeed = options.typeSpeed || 20 // delay per character, to simulate the machine "typing"
   widerBy = options.widerBy || 2 // add a little extra width to bubbles to make sure they don't break
   sidePadding = options.sidePadding || 6 // padding on both sides of chat bubbles
   recallInteractions = options.recallInteractions || 0 // number of interactions to be remembered and brought back upon restart
@@ -106,7 +106,7 @@ function Bubbles(container, self, options) {
           )
         if (this.value.includes("蚊教") || this.value.includes("蚊子") || this.value.includes("蚊子教"))
           addBubble(
-            '什么教喵?永远相信代数 物品至上神教(✿◡‿◡)',
+            '永远相信蚊教(✿◡‿◡)',
             function() {},
             
           )
@@ -130,7 +130,7 @@ function Bubbles(container, self, options) {
             )
         if (this.value.includes("物品") || this.value.includes("os") || this.value.includes("osc") || this.value.includes("bfdi") || this.value.includes("bfb") || this.value.includes("tpot") || this.value.includes("ii") || this.value.includes("iii") || this.value.includes("battle for dream island") || this.value.includes("inanimate insanity") || this.value.includes("osc"))
             addBubble(
-              '你说得对,但是xxx前面忘了后面忘了喵',
+              '你说得对,但是物品xxx前面忘了后面忘了喵',
               function() {},
               
             )
@@ -146,9 +146,15 @@ function Bubbles(container, self, options) {
               function() {},
               
             )
+        if (this.value.includes("😨"))
+            addBubble(
+              '😨',
+              function() {},
+              
+            )
         else
             addBubble(
-              "听不懂喵(｡•́︿•̀｡)",
+              "喵( •̀ ω •́ )y",
               function() {},
               
             )
