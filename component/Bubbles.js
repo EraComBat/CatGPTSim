@@ -112,24 +112,6 @@ function Bubbles(container, self, options) {
             function() {},
             
           )
-        if (this.value.includes("嫌疑人") || this.value.includes("嫌疑"))
-            addBubble(
-              '嫌疑人疑似为了试出关键词不择手段(｡•́︿•̀｡)',
-              function() {},
-              
-            )
-        if (this.value.includes("草") || this.value.includes("草啊"))
-            addBubble(
-              '嫌疑人疑似??????????????????????(｡•́︿•̀｡)',
-              function() {},
-              
-            )
-        if (this.value.includes("物品") || this.value.includes("os") || this.value.includes("osc") || this.value.includes("bfdi") || this.value.includes("bfb") || this.value.includes("tpot") || this.value.includes("ii") || this.value.includes("iii") || this.value.includes("battle for dream island") || this.value.includes("inanimate insanity") || this.value.includes("osc"))
-            addBubble(
-              '你说得对,但是物品xxx前面忘了后面忘了喵',
-              function() {},
-              
-            )
         if (this.value.includes("喵( •̀ ω •́ )y"))
             addBubble(
               '补药学我说话喵(｡•́︿•̀｡)',
@@ -142,9 +124,9 @@ function Bubbles(container, self, options) {
               function() {},
               
             )
-        if (this.value.includes("😨"))
+        if (this.value.includes("KEY EMBEDDED IN STARS"))
             addBubble(
-              '😨',
+              'https://eracombat.github.io/0xf08zsu9aw-09we8fyaw9e',
               function() {},
               
             )
