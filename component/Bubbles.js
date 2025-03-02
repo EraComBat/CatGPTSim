@@ -126,7 +126,7 @@ function Bubbles(container, self, options) {
             )
         if (this.value.includes("KEY EMBEDDED IN STARS"))
             addBubble(
-              'https://eracombat.github.io/0xf08zsu9aw-09we8fyaw9e',
+              'https://eracombat.github.io/0xf08zsu9/',
               function() {},
               
             )
